@@ -422,7 +422,7 @@ p {
 .bar-nav-menu ul li {
   display: inline-block;
   position: relative;
-  padding: 0 34px;
+  padding: 0 22px;
 }
 .bar-nav-menu > ul > li:nth-child(1) {
   /* padding: 0 22px 0 0; */
