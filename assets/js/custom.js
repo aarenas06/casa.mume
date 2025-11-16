@@ -32,9 +32,16 @@ Project: Solar Supplier HTML
 
     // loader js
      bar_loader: function () {
+      // Ocultar el loader después de 500ms como máximo (más rápido)
+      setTimeout(function() {
+        $(".bar-loader").fadeOut(300);
+        $(".bar-spin").fadeOut(300);
+      }, 500);
+      
+      // También ocultarlo cuando cargue la página (lo que ocurra primero)
       jQuery(window).on('load', function () {
-        $(".bar-loader").fadeOut();
-        $(".bar-spin").delay(500).fadeOut("slow");
+        $(".bar-loader").fadeOut(300);
+        $(".bar-spin").fadeOut(300);
       });
     },
     // nav menu toggle
