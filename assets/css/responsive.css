@@ -88,11 +88,17 @@
     .bar-about-img::after {
         right: 0px;
     }
-    .bar-about-img img:nth-child(1), .bar-about-icon, .bar-about-img2, .bar-about-img::after, .bar-about-img::before{
+    .bar-about-icon, .bar-about-img2, .bar-about-img::after, .bar-about-img::before{
         display: none;
     }
+    .bar-about-img > img:first-child {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
     .bar-about-img img:nth-child(2){
-        display: block;
+        display: none;
     }
     .bar-nav-menu ul li {
         padding: 0 10px;

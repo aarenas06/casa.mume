@@ -687,6 +687,13 @@ li.bar-has-menu a svg {
   position: relative;
   padding-bottom: 40px;
 }
+.bar-about-img > img:first-child {
+  width: 327px;
+  height: 468px;
+  object-fit: cover;
+  display: block;
+  margin-left: 13.3%;
+}
 .bar-about-img::before {
   position: absolute;
   content: "";
@@ -713,6 +720,12 @@ li.bar-has-menu a svg {
   position: absolute;
   bottom: 0;
   right: 0px;
+}
+.bar-about-img2 img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
 }
 .bar-about-icon {
   position: absolute;
@@ -747,6 +760,13 @@ li.bar-has-menu a svg {
   grid-template-columns: 230px 1fr;
   padding: 34px 0 0;
   position: relative;
+}
+.bar-about-rightimg > img {
+  width: 100%;
+  max-width: 325px;
+  height: 275px;
+  object-fit: cover;
+  display: block;
 }
 .bar-right-counter {
   border: 1px solid var(--bar-border-color);
@@ -818,7 +838,7 @@ li.bar-has-menu a svg {
   top: 0;
   left: 0;
   margin: auto;
-  background: url("../images/service-img.png");
+  background: url("../../CasaMume/img7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -1181,6 +1201,15 @@ li.bar-has-menu a svg {
 }
 .bar-appointment-img {
   position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+.bar-appointment-img video,
+.bar-appointment-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .bar-play-icon {
   position: absolute;
@@ -1262,6 +1291,14 @@ li.bar-has-menu a svg {
   object-fit: cover;
   border-radius: 8px;
 }
+.bar-videopopup-content video {
+  max-width: 800px;
+  width: 90%;
+  max-height: 80vh;
+  min-height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
 .bar-appointment-text h2 {
   font-size: 50px;
   font-weight: 700;
@@ -1340,7 +1377,7 @@ li.bar-has-menu a svg {
     -webkit-transform: rotate(0deg) translate(-8px) rotate(0deg);
     -moz-transform: rotate(0deg) translate(-8px) rotate(0deg);
     -ms-transform: rotate(0deg) translate(-8px) rotate(0deg);
-    -o-transform: rotate(0deg) translate(-8px) rotate(0deg);
+    -o-transform: rotate(0deg) translate(-8px) rotate(-8px);
     transform: rotate(0deg) translate(-8px) rotate(0deg);
     transition: 1s ease-in-out;
   }
@@ -1837,9 +1874,15 @@ h3.post_heading {
 }
 .bar-sersin-img {
   overflow: hidden;
+  height: 350px;
+  position: relative;
 }
 .bar-sersin-img img {
   transition: all 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .bar-sersin-img:hover img {
   transform: rotate(8deg) scale(1.2);
